@@ -14,7 +14,6 @@ pub fn highlight(code: &str, language: &str) -> Vec<(String, Vec<Token>)> {
     // Regex patterns
     let re_paren = Regex::new(r"[\(\)]").unwrap();
     let re_func_name = Regex::new(r"\b([a-zA-Z_][a-zA-Z0-9_]*)\s*\(").unwrap();
-    let re_method = Regex::new(r"\b([a-zA-Z_][a-zA-Z0-9_]*)\.([a-zA-Z_][a-zA-Z0-9_]*)\b").unwrap();
     let re_keyword = Regex::new(&format!(r"\b({})", keywords.keys().cloned().collect::<Vec<_>>().join("|"))).unwrap();
     let re_number = Regex::new(r"\b\d+(\.\d+)?\b").unwrap();
 
