@@ -1,0 +1,95 @@
+use std::collections::HashMap;
+
+pub fn keywords() -> HashMap<&'static str, &'static str> {
+    let mut map = HashMap::new();
+    map.insert("alignas", "keyword");
+    map.insert("alignof", "keyword");
+    map.insert("asm", "keyword");
+    map.insert("auto", "keyword");
+    map.insert("bitand", "keyword");
+    map.insert("bitor", "keyword");
+    map.insert("bool", "keyword");
+    map.insert("break", "keyword");
+    map.insert("case", "keyword");
+    map.insert("catch", "keyword");
+    map.insert("char", "keyword");
+    map.insert("class", "keyword");
+    map.insert("compl", "keyword");
+    map.insert("concept", "keyword");
+    map.insert("const", "keyword");
+    map.insert("constexpr", "keyword");
+    map.insert("const_cast", "keyword");
+    map.insert("continue", "keyword");
+    map.insert("co_await", "keyword");
+    map.insert("co_return", "keyword");
+    map.insert("co_yield", "keyword");
+    map.insert("decltype", "keyword");
+    map.insert("default", "keyword");
+    map.insert("delete", "keyword");
+    map.insert("do", "keyword");
+    map.insert("double", "keyword");
+    map.insert("dynamic_cast", "keyword");
+    map.insert("else", "keyword");
+    map.insert("enum", "keyword");
+    map.insert("explicit", "keyword");
+    map.insert("export", "keyword");
+    map.insert("extern", "keyword");
+    map.insert("false", "keyword");
+    map.insert("float", "keyword");
+    map.insert("for", "keyword");
+    map.insert("friend", "keyword");
+    map.insert("goto", "keyword");
+    map.insert("if", "keyword");
+    map.insert("import", "keyword");
+    map.insert("inline", "keyword");
+    map.insert("int", "keyword");
+    map.insert("long", "keyword");
+    map.insert("mutable", "keyword");
+    map.insert("namespace", "keyword");
+    map.insert("new", "keyword");
+    map.insert("noexcept", "keyword");
+    map.insert("not", "keyword");
+    map.insert("nullptr", "keyword");
+    map.insert("operator", "keyword");
+    map.insert("or", "keyword");
+    map.insert("private", "keyword");
+    map.insert("protected", "keyword");
+    map.insert("public", "keyword");
+    map.insert("register", "keyword");
+    map.insert("reinterpret_cast", "keyword");
+    map.insert("requires", "keyword");
+    map.insert("return", "keyword");
+    map.insert("short", "keyword");
+    map.insert("signed", "keyword");
+    map.insert("sizeof", "keyword");
+    map.insert("static", "keyword");
+    map.insert("static_assert", "keyword");
+    map.insert("static_cast", "keyword");
+    map.insert("struct", "keyword");
+    map.insert("switch", "keyword");
+    map.insert("synchronized", "keyword");
+    map.insert("template", "keyword");
+    map.insert("this", "keyword");
+    map.insert("thread_local", "keyword");
+    map.insert("throw", "keyword");
+    map.insert("true", "keyword");
+    map.insert("try", "keyword");
+    map.insert("typedef", "keyword");
+    map.insert("typeid", "keyword");
+    map.insert("typename", "keyword");
+    map.insert("union", "keyword");
+    map.insert("unsigned", "keyword");
+    map.insert("using", "keyword");
+    map.insert("virtual", "keyword");
+    map.insert("void", "keyword");
+    map.insert("volatile", "keyword");
+    map.insert("wchar_t", "keyword");
+    map.insert("while", "keyword");
+    map.insert("xor", "keyword");
+    map.insert("xorl", "keyword");
+    map
+}
+
+pub fn function_definers() -> Vec<&'static str> {
+    vec!["void", "int", "float", "double", "char", "auto"]
+}
