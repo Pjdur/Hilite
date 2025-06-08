@@ -6,7 +6,7 @@ authors = ["Pjdur"]
 description = "A syntax highlighter with terminal support"
 repository = "https://github.com/Pjdur/synk"
 license = "MIT"
-license-file = "LICENSE.txt"
+license-file = "LICENSE"
 
 [dependencies]
 regex = "1.11.1"
