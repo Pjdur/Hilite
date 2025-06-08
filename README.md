@@ -1,6 +1,6 @@
-# Hilite
+# Synk
 
-**Hilite** is a fast, efficient, and extensible syntax highlighter written in Rust. It supports multiple programming languages and outputs colorized code for terminal display using ANSI escape codes.
+**Synk** is a fast, efficient, and extensible syntax highlighter written in Rust. It supports multiple programming languages and outputs colorized code for terminal display using ANSI escape codes.
 
 ---
 
@@ -16,17 +16,17 @@
 
 ## Installation
 
-Add Hilite to your project with [Cargo](https://crates.io):
+Add synk to your project with [Cargo](https://crates.io):
 
 ```sh
-cargo add hilite
+cargo add synk
 ```
 
 Or add it manually to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-hilite = "0.1"
+synk = "0.1"
 ```
 
 ---
@@ -38,7 +38,7 @@ hilite = "0.1"
 The main entry point is the `highlight` function, which tokenizes and annotates your code with color information.
 
 ```rust
-use hilite::highlight;
+use synk::highlight;
 
 let code = r#"
 fn main() {
@@ -80,7 +80,7 @@ for (indent, tokens) in highlighted {
 For terminal output with ANSI colors, use the `colorize` function:
 
 ```rust
-use hilite::{highlight, colorize};
+use synk::{highlight, colorize};
 
 let code = r#"
 fn main() {
@@ -98,7 +98,7 @@ This prints the code to the terminal with syntax highlighting.
 
 ### 3. Supported Languages
 
-Hilite supports the following languages (and more can be added easily):
+synk supports the following languages (and more can be added easily):
 
 - Rust
 - Python
@@ -156,7 +156,7 @@ Prints highlighted code to the terminal using ANSI escape codes.
 ## Example
 
 ```rust
-use hilite::{highlight, colorize};
+use synk::{highlight, colorize};
 
 fn main() {
     let code = r#"
