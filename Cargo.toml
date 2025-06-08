@@ -10,10 +10,3 @@ license-file = "LICENSE.txt"
 
 [dependencies]
 regex = "1.11.1"
-
-[dependencies]
-regex = "1.11.1"
-
-
-[dependencies]
-regex = "1.11.1"
