@@ -1,4 +1,4 @@
-use Hilite::highlight;
+use synk::highlight;
 
 fn main() {
     let code = r#"

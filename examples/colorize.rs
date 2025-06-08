@@ -1,4 +1,4 @@
-use Hilite::{colorize, highlight};
+use synk::{colorize, highlight};
 
 fn main() {
     let code = r#"
